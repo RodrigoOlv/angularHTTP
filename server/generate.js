@@ -11,7 +11,7 @@ async function generateProducts() {
     for (let i = 0; i < 10; i++) {
         let p = new Product ({
             name: Faker.commerce.productName(),
-            departament: Faker.commerce.department(),
+            department: Faker.commerce.department(),
             price: Faker.commerce.price()
         });
 
