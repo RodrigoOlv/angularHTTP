@@ -113,12 +113,12 @@ app.patch('/products/:id', function (req, res) {
             prod.name = req.body.name;
             prod.price = req.body.price;
             prod.department = req.body.department;
-            prod.save((err, prod => {
+            prod.save((err, prod) => {
                 if (err)
                     res.status(500).send(err);
                 else
                     res.status(200).send(prod);
-            }));
+            });
         }
     });
 });
